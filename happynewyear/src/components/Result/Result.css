@@ -1,0 +1,13 @@
+.result {
+    text-align: center;
+    margin-top: 50px;
+}
+.animation {
+    font-size: 3rem;
+    animation: fireworks 1s infinite alternate;
+}
+@keyframes fireworks {
+    0% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 1; transform: scale(1.2); }
+    100% { opacity: 0; transform: scale(0.5); }
+}
