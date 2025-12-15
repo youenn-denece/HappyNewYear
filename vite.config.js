@@ -1,7 +1,6 @@
-
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import path from 'path' // ✅ module Node.js natif
+import { resolve } from 'path' // ✅ Import de resolve depuis path
 
 export default defineConfig({
     plugins: [vue()],
@@ -10,8 +9,17 @@ export default defineConfig({
     },
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, 'src') // ✅ fonctionne correctement
+            '@': resolve(__dirname, 'src')
         }
+    },
+    css: {
+        preprocessorOptions: {
+            scss: {
+                api: 'modern-compiler' // Pour sass-embedded
+            }
+        }
+    },
+    optimizeDeps: {
+        include: ['animejs']
     }
 })
-
