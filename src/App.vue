@@ -12,11 +12,13 @@
               <select id="city" v-model="selectedCity" class="custom-select">
                 <option value="">-- Sélectionnez une ville --</option>
                 <option value="quimper">Quimper</option>
+                <option value="quimperKermoisan">Quimper (Kermoisan)</option>
+                <option value="quimperle">Quimperlé</option>
                 <option value="rennes">Rennes</option>
                 <option value="mellac">Mellac</option>
                 <option value="plelan">Plélan le Grand</option>
-                <option value="brest">Quimperlé</option>
-                <option value="vannes">Vannes</option>
+                <option value="nantes">Nantes</option>
+                <option value="thouareSurLoire">Thouaré sur Loire</option>
               </select>
               <div class="select-arrow"></div>
             </div>
@@ -118,18 +120,24 @@ export default {
     }
 
     const nameMapping = {
+      'chavagne-femme': 'Oforiwa',
+      'chavagne-homme': 'Mathou',
+      'nantes-femme': 'Marion',
+      'nantes-homme': 'Sébastien',
+      'rennes-femme': 'Elodie',
+      'quimperle-homme': 'Claude',
       'quimper-homme': 'Antoine',
       'quimper-femme': 'Anne',
       'rennes-homme': 'Youenn',
-      'rennes-femme': 'Elodie',
+      'plelan-femme': 'Moomoone',
       'mellac-homme': 'Sylvain',
       'mellac-femme': 'Milou',
       'plelan-homme': 'Adrien',
-      'plelan-femme': 'Moomoone',
-      'chavagne-homme': 'Mathou',
-      'chavagne-femme': 'Ofo',
-      'vannes-homme': 'Vincent',
-      'vannes-femme': 'Viviane',
+      'thouareSurLoire-femme' : 'Rose',
+      'thouareSurLoire-homme' : 'Léandre'
+
+
+
     }
 
     const isFormComplete = computed(() => {
@@ -143,7 +151,7 @@ export default {
     const wishMessage = computed(() => {
       if (!isFormComplete.value) return { text: '', name: '', exclamation: '' }
       const key = `${selectedCity.value}-${selectedGender.value}`
-      const name = nameMapping[key] || 'Ami(e)'
+      const name = nameMapping[key] || 'à toi'
       return {
         text: 'Bonne année ',
         name: name,
