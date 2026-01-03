@@ -16,9 +16,9 @@
                 <option value="quimperle">Quimperlé</option>
                 <option value="rennes">Rennes</option>
                 <option value="mellac">Mellac</option>
-                <option value="plelan">Plélan le Grand</option>
-                <option value="nantes">Nantes</option>
-                <option value="thouareSurLoire">Thouaré sur Loire</option>
+                <option value="plelan">Plélan-le-Grand</option>
+                <option value="reze">Rezé</option>
+                <option value="thouareSurLoire">Thouaré-sur-Loire</option>
               </select>
               <div class="select-arrow"></div>
             </div>
@@ -122,10 +122,11 @@ export default {
     const nameMapping = {
       'chavagne-femme': 'Oforiwa',
       'chavagne-homme': 'Mathou',
-      'nantes-femme': 'Marion',
-      'nantes-homme': 'Sébastien',
+      'reze-femme': 'Marion',
+      'reze-homme': 'Sébastien',
       'rennes-femme': 'Elodie',
-      'quimperle-homme': 'Claude',
+      'quimperle-femme': 'Claude',
+      'quimperle-homme': 'Jean-Yves',
       'quimper-homme': 'Antoine',
       'quimper-femme': 'Anne',
       'rennes-homme': 'Youenn',
@@ -134,7 +135,9 @@ export default {
       'mellac-femme': 'Milou',
       'plelan-homme': 'Adrien',
       'thouareSurLoire-femme' : 'Rose',
-      'thouareSurLoire-homme' : 'Léandre'
+      'thouareSurLoire-homme' : 'Léandre',
+      'quimperKermoisan-homme' : 'Ibrahim',
+      'quimperKermoisan-femme' :'Marion'
 
 
 
