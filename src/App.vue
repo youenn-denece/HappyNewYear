@@ -18,6 +18,7 @@
                 <option value="mellac">Mellac</option>
                 <option value="plelan">Plélan-le-Grand</option>
                 <option value="reze">Rezé</option>
+                <option value="chavagne">Chavagne</option>
                 <option value="thouareSurLoire">Thouaré-sur-Loire</option>
               </select>
               <div class="select-arrow"></div>
